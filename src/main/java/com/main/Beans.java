@@ -10,7 +10,7 @@ public class Beans {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-beans-context.xml");
 		
-		Employees employee = (Employee) applicationContext.getBean("employee");
+		Employee employee = (Employee) applicationContext.getBean("employee");
 		employee.employeeCompanyName();
 	}
 
